@@ -1,4 +1,4 @@
-FROM golang:latest
+FROM golang:latest as builder
 LABEL maintainer="zhounanjun <zhouyu@cmss.chinamobile.com>"
 WORKDIR /app
 COPY go.mod go.sum ./
