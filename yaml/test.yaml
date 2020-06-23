@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: golang-test
+  labels:
+    env: test
+spec:
+  containers:
+  - name: main
+    image: registry.nanjun/test/golang-test:gin
+    command: ["main"]
