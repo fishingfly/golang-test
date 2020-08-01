@@ -9,4 +9,5 @@ spec:
   containers:
   - name: main
     image: registry.nanjun/test/golang-test:gin
-    command: ["/usr/local/bin/main"]
+    imagePullPolicy: Always
+    command: ["/usr/local/bin/golang-test"]
